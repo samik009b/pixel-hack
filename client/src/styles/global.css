@@ -1,0 +1,36 @@
+* {
+    font-family: "montserrat";
+    /* font-family: ; */
+}
+/* 
+.feature-card {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 12px;
+} */
+
+.feature-icon {
+    width: 70px;
+    height: 70px;
+    object-fit: contain;
+}
+
+@media (max-width: 767px) {
+    .feature-card {
+        flex-direction: row;
+        text-align: left;
+        justify-content: flex-start;
+    }
+
+    .feature-card img {
+        margin-bottom: 0;
+        margin-right: 12px;
+    }
+
+    .feature-card div {
+        text-align: left;
+    }
+}
