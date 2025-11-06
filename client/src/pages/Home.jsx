@@ -31,7 +31,7 @@ function Home() {
             <div class="container text-center">
                 <h1 className="fs-1 fw-semibold mt-3 mb-0 text-start">Why choose us ?</h1>
                 {/* optional enhancement, follow DRY rule here */}
-                <div className="row text-center g-4 m-3">
+                <div className="row text-center gap-4 m-3">
                     <div className="col-md feature-card py-4 m-0">
                         <img src="/feature-1.png" className="feature-icon mb-3" alt="Book now" />
                         <div>
@@ -73,7 +73,7 @@ function Home() {
                                     className="img-fluid rounded"
                                 />
                                 <span className="position-absolute top-0 end-0 text-white px-2 py-1 rounded-start fw-medium fs-5">
-                                    Bangalore
+                                    <i class="bi bi-geo-alt-fill"></i> Bangalore
                                 </span>
                             </div>
                         </div>
@@ -86,7 +86,7 @@ function Home() {
                                     className="img-fluid rounded"
                                 />
                                 <span className="position-absolute top-0 end-0 text-white px-2 py-1 rounded-start fw-medium fs-5">
-                                    Hyderabad
+                                    <i class="bi bi-geo-alt-fill"></i> Hyderabad
                                 </span>
                             </div>
                         </div>
@@ -101,7 +101,7 @@ function Home() {
                                     className="img-fluid rounded"
                                 />
                                 <span className="position-absolute top-0 end-0 text-white px-2 py-1 rounded-start fw-medium fs-5">
-                                    Rajasthan
+                                    <i class="bi bi-geo-alt-fill"></i> Rajasthan
                                 </span>
                             </div>
                         </div>
@@ -114,7 +114,7 @@ function Home() {
                                     className="img-fluid rounded"
                                 />
                                 <span className="position-absolute top-0 end-0 text-white px-2 py-1 rounded-start fw-medium fs-5">
-                                    basil's Cathedral, Moscow
+                                    <i class="bi bi-geo-alt-fill"></i> basil's Cathedral, Moscow
                                 </span>
                             </div>
                         </div>
@@ -123,7 +123,7 @@ function Home() {
                             <div className="position-relative">
                                 <img src="/fes.jpg" alt="Fes" className="img-fluid rounded" />
                                 <span className="position-absolute top-0 end-0 text-white px-2 py-1 rounded-start fw-medium fs-5">
-                                    Fes, Morocco
+                                    <i class="bi bi-geo-alt-fill"></i> Fes, Morocco
                                 </span>
                             </div>
                         </div>

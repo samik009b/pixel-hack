@@ -2,15 +2,10 @@
     font-family: "montserrat";
     /* font-family: ; */
 }
-/* 
+
 .feature-card {
-    display: flex;
-    flex-direction: column; 
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    gap: 12px;
-} */
+    background: #eeefff;
+}
 
 .feature-icon {
     width: 70px;
