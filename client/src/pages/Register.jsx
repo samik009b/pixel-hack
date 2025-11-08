@@ -8,6 +8,7 @@ function Register() {
     handleSubmit,
     formState: { errors },
   } = useForm();
+  
   const onSubmit = async (data) => {
     try {
       const response = await fetch("http://localhost:1337", {
