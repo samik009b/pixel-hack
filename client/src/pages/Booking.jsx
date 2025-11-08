@@ -126,7 +126,7 @@ function Booking() {
           <button className="btn btn-primary mt-3" onClick={handleConfirm}>
             Confirm Booking
           </button>
-          <a className="btn btn-outline-primary mt-3" href={`http://localhost:3000/contact/${id}`}>
+          <a className="btn btn-outline-primary mt-3" href={`http://localhost:3000/booking/${id}`}>
             Contact Us
           </a>
         </div>

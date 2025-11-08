@@ -28,8 +28,8 @@ function Navbar() {
                             </Link>
                         </li>
                         <li className="nav-item">
-                            <Link className="nav-link" to="/booking">
-                                Booking
+                            <Link className="nav-link" to="/favourites">
+                                Favourites
                             </Link>
                         </li>
                         <li className="nav-item">

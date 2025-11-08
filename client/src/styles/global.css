@@ -1,31 +1,44 @@
 * {
-    font-family: "montserrat";
-    /* font-family: ; */
+  font-family: "montserrat";
+  /* font-family: ; */
 }
 
 .feature-card {
-    background: #eeefff;
+  background: #eeefff;
 }
 
 .feature-icon {
-    width: 70px;
-    height: 70px;
-    object-fit: contain;
+  width: 70px;
+  height: 70px;
+  object-fit: contain;
 }
 
 @media (max-width: 767px) {
-    .feature-card {
-        flex-direction: row;
-        text-align: left;
-        justify-content: flex-start;
-    }
+  .feature-card {
+    flex-direction: row;
+    text-align: left;
+    justify-content: flex-start;
+  }
 
-    .feature-card img {
-        margin-bottom: 0;
-        margin-right: 12px;
-    }
+  .feature-card img {
+    margin-bottom: 0;
+    margin-right: 12px;
+  }
 
-    .feature-card div {
-        text-align: left;
-    }
+  .feature-card div {
+    text-align: left;
+  }
+}
+
+.overlay {
+  position: absolute;
+  inset: 0; 
+  background: rgba(0, 0, 0, 0.6);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  border-radius: 0.375rem;
+}
+
+.position-relative:hover .overlay {
+  opacity: 1;
 }
