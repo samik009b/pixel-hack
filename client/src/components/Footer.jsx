@@ -1,4 +1,3 @@
-
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap-icons/font/bootstrap-icons.css";
 import "../styles/footer.css";
@@ -22,22 +21,30 @@ function Footer() {
             <h6 className="fw-semibold mb-3">Quick Links</h6>
             <ul className="list-unstyled">
               <li>
-                <a href="#" className="footer-link text-decoration-none ">
+                <a
+                  href="https://pixel-hack-virid.vercel.app/"
+                  className="footer-link text-decoration-none ">
                   Home
                 </a>
               </li>
               <li>
-                <a href="#" className="footer-link text-decoration-none">
+                <a
+                  href="https://pixel-hack-virid.vercel.app/about"
+                  className="footer-link text-decoration-none">
                   About
                 </a>
               </li>
               <li>
-                <a href="#" className="footer-link text-decoration-none">
-                  Services
+                <a
+                  href="https://pixel-hack-virid.vercel.app/hotels"
+                  className="footer-link text-decoration-none">
+                  Hotels
                 </a>
               </li>
               <li>
-                <a href="#" className="footer-link text-decoration-none link-white">
+                <a
+                  href="https://pixel-hack-virid.vercel.app/"
+                  className="footer-link text-decoration-none link-white">
                   Contact
                 </a>
               </li>
@@ -48,16 +55,20 @@ function Footer() {
           <div className="col-6 col-md-4 text-md-end">
             <h6 className="fw-semibold mb-3">Follow Us</h6>
             <div className="d-flex d-md-inline-flex justify-content-start justify-content-md-end">
-              <a href="#" className="footer-icon me-3">
-                <i className="bi bi-facebook fs-4"></i>
+              <a
+                href="https://www.linkedin.com/in/samik-biswas-943805320/"
+                className="footer-icon me-3">
+                <i className="bi bi-linkedin fs-4"></i>
               </a>
-              <a href="#" className="footer-icon me-3">
+              <a href="https://x.com/bsamik009" className="footer-icon me-3">
                 <i className="bi bi-twitter fs-4"></i>
               </a>
-              <a href="#" className="footer-icon me-3">
+              <a
+                href="https://www.instagram.com/bsamik009?igsh=MXF1aHJ4aWo3ZWs0bA=="
+                className="footer-icon me-3">
                 <i className="bi bi-instagram fs-4"></i>
               </a>
-              <a href="#" className="footer-icon">
+              <a href="https://github.com/samik009b" className="footer-icon">
                 <i className="bi bi-github fs-4"></i>
               </a>
             </div>
