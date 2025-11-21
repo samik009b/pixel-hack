@@ -1,6 +1,6 @@
 import { useParams, useNavigate } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
-import hotels from "../data/hotels"; // ← import your 11-hotel data file
+import hotels from "../data/hotels";
 
 function HotelDetails() {
   const { id } = useParams();
@@ -19,7 +19,6 @@ function HotelDetails() {
 
   return (
     <div className="container my-4">
-      {/* Header */}
       <div className="mb-4">
         <h2>{hotel.name}</h2>
         <p className="text-muted">
@@ -27,7 +26,6 @@ function HotelDetails() {
         </p>
       </div>
 
-      {/* Single Hotel Image */}
       <div className="mb-4">
         <img
           src={hotel.images[0]}
