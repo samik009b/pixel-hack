@@ -29,7 +29,7 @@ function Footer() {
               </li>
               <li>
                 <a
-                  href="https://pixel-hack-virid.vercel.app/about"
+                  href="https://pixel-hack-virid.vercel.app"
                   className="footer-link text-decoration-none">
                   About
                 </a>
