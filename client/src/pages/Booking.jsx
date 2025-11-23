@@ -1,14 +1,12 @@
 import { useState } from "react";
 import { useParams } from "react-router-dom";
-import hotelsData from "../data/hotels"; // adjust import path if needed
+import hotelsData from "../data/hotels";
 
 function Booking() {
-  const { id } = useParams(); // get hotel ID from URL
+  const { id } = useParams();
 
-  // find hotel first
   const hotel = hotelsData.find((h) => h.id === id);
 
-  // always call hooks unconditionally
   const [form, setForm] = useState({
     checkIn: "",
     checkOut: "",
@@ -17,12 +15,10 @@ function Booking() {
 
   const [success, setSuccess] = useState(false);
 
-  // handle input changes
   const handleChange = (e) => {
     setForm({ ...form, [e.target.name]: e.target.value });
   };
 
-  // confirm booking
   const handleConfirm = () => {
     const bookingDetails = {
       hotelName: hotel?.name || "Unknown Hotel",
@@ -37,7 +33,6 @@ function Booking() {
     setSuccess(true);
   };
 
-  // now handle invalid hotel case AFTER hooks
   if (!hotel) {
     return (
       <div className="container mt-5">
@@ -50,7 +45,6 @@ function Booking() {
     <div className="container mt-5">
       <h2 className="mb-4 text-center">Book Your Stay</h2>
 
-      {/* Hotel Info Section */}
       <div className="card mb-4 shadow-sm">
         <img
           src={hotel.images[0]}
@@ -65,7 +59,6 @@ function Booking() {
         </div>
       </div>
 
-      {/* Booking Form */}
       <div className="card p-4 shadow-sm mb-4">
         <h4>Booking Form</h4>
         <div className="row">
@@ -103,7 +96,6 @@ function Booking() {
         </div>
       </div>
 
-      {/* Booking Summary */}
       <div className="card p-4 shadow-sm mb-4">
         <h4>Booking Summary</h4>
         <p>
@@ -132,7 +124,6 @@ function Booking() {
         </div>
       </div>
 
-      {/* Success Message */}
       {success && (
         <div className="alert alert-success">
           Booking confirmed! Your reservation has been saved.

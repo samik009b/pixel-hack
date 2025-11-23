@@ -6,7 +6,6 @@ function HotelDetails() {
   const { id } = useParams();
   const navigate = useNavigate();
 
-  // find hotel by id
   const hotel = hotels.find((h) => h.id === id);
 
   if (!hotel) {
@@ -36,7 +35,6 @@ function HotelDetails() {
       </div>
 
       <div className="row">
-        {/* Left side: Info */}
         <div className="col-md-8">
           <h4>About this Hotel</h4>
           <p>{hotel.description}</p>
@@ -67,7 +65,6 @@ function HotelDetails() {
           </div>
         </div>
 
-        {/* Right side: Booking Box */}
         <div className="col-md-4">
           <div className="card shadow-sm sticky-top" style={{ top: "90px" }}>
             <div className="card-body">
@@ -84,7 +81,6 @@ function HotelDetails() {
         </div>
       </div>
 
-      {/* Location Section */}
       <div className="mt-5">
         <h5>Location</h5>
         <p>{hotel.location}</p>

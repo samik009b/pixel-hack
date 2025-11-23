@@ -23,7 +23,7 @@ function Register() {
         throw new Error(`Server error: ${response.status}`);
       }
 
-      const res = await response.json(); // or .text() if your server returns plain text
+      const res = await response.json(); 
       console.log("Sent data:", data);
       console.log("Server response:", res);
     } catch (error) {
